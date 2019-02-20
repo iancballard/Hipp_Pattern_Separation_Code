@@ -73,20 +73,27 @@ Run’s FSL’s ICA decomposition on pre-processed data.
 This notebook generates the ROI mask figure in the Supplement.
 
 
-Other Data
+## Lyman software
+The following scripts specify the analyses run by the Lyman ecosystem.
+
 [project.py](project.py)
+
 The lyman project file that defines general parameters for both the localizer and SIM experiments
 
 [sim.py](sim.py); [loc.py](loc.py)
+
 The lyman experiment file for preprocessing and modeling the fMRI data.
 
 [sim-PE.py](sim-PE.py) 
+
 contrasts for model of prediction errors
 
 [sim-betas.py](sim-betas.py); [loc-betas.py](loc-betas.py)
+
 The lyman experiment file for first-level beta series modeling the fMRI data.
 
 [subjects.txt](subjects.txt)
+
 The subject codes used in the processing.
 
 ## License
