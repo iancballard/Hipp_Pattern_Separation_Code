@@ -48,56 +48,45 @@ run_fmri.py -e loc -s subjects.txt -w model reg ffx -regspace epi -regexp sim
 
 ## fMRI Analysis Notebooks
 
-make_masks.ipynb
-Link to static notebook
+[make_masks.ipynb](make_masks.ipynb)
 
 Warp ROIs from group space to individual subject sufaces and write binary masks in functional space.
 
-prepare_fieldmaps.ipynb
-Link to static notebook
+[prepare_fieldmaps.ipynb](prepare_fieldmaps.ipynb)
 
 Create images with opposite phase encoding directions for topup field correction.
 
-recon-all.ipynb
-Link to static notebook
+[striatum_analysis.ipynb](striatum_analysis.ipynb)
 
-All of the actual analyses are contained within this notebook.
+Main analysis code for ROI analysis of the striatal feedback response.
 
-rerun_bbregister.ipynb
-Link to static notebook
-
-For some subjects, bbregister failed and we needed to identify bad registrations and potentially create hand-made initializations.
-
-[roi_analysis.ipynb](roi_analysis.ipynb)
-
-Main analysis code for ROI analysis for the manuscript.
-
-run_fix.ipynb
+[run_fix.ipynb](run_fix.ipynb)
 
 Run’s FSL’s automatic ICA denoising algorithm.
 
-run_melodic.ipynb
-Link to static notebook
+[run_melodic.ipynb](run_fix.ipynb)
 
 Run’s FSL’s ICA decomposition on pre-processed data.
 
-ROI_Figure.ipynb
-Link to static notebook
+[roi_figure.ipynb](roi_figure.ipynb)
 
-This notebook generates the ROI figure in the manuscript.
+This notebook generates the ROI mask figure in the Supplement.
 
 
 Other Data
-project.py
-The lyman project file that was used to process the data.
+[project.py](project.py)
+The lyman project file that defines general parameters for both the localizer and SIM experiments
 
-mag.py
-The lyman experiment file for preprocessing the fMRI data.
+[sim.py](sim.py); [loc.py](loc.py)
+The lyman experiment file for preprocessing and modeling the fMRI data.
 
-mag-SVtotaldiff.py
-The lyman experiment file for first-level modeling the fMRI data.
+[sim-PE.py](sim-PE.py) 
+contrasts for model of prediction errors
 
-subjects.txt
+[sim-betas.py](sim-betas.py); [loc-betas.py](loc-betas.py)
+The lyman experiment file for first-level beta series modeling the fMRI data.
+
+[subjects.txt](subjects.txt)
 The subject codes used in the processing.
 
 ## License
