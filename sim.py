@@ -1,0 +1,22 @@
+"""Preprocessing parameters for sim experiment."""
+source_template = "{subject_id}/func/sim/run_?_crop.nii.gz"
+n_runs = 3
+TR = 1.5
+frames_to_toss = 8
+temporal_interp = False
+interleaved = False
+coreg_init = "fsl"
+intensity_threshold = 4.5
+motion_threshold = 0.5
+smooth_fwhm = 4
+surf_smooth = 4
+hpf_cutoff = 128
+grf_pthresh = .05
+hrf_model = 'GammaDifferenceHRF'
+confound_pca = True
+temporal_deriv = False
+units = "secs"
+remove_working_dir = True
+confound_sources = ['wm']
+fieldmap_template = "{subject_id}/cal/lyman/fm_sim_?_mc_pe0_pe1.nii.gz"
+fieldmap_pe = ['y','y-']
