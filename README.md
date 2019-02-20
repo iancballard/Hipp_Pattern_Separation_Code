@@ -1,7 +1,8 @@
-nalyses for More is meaningful: The magnitude effect in intertemporal choice depends on self-control
 This repository contains analysis code for the following paper:
 
-Ian C. Ballard, Bokyung Kim, Anthony Liatsis, Jonathan D. Cohen, Samuel M. McClure. More is meaningful: The magnitude effect in intertemporal choice depends on self-control .
+Ian C. Ballard, Anthony D. Wager, Samuel M. McClure. Hippocampal Pattern Separation Supports Reinforcement Learning.
+
+Raw behavioral and MRI data for this study can be accessed at: https://openneuro.org/datasets/ds001590
 
 The code is contained within several IPython notebooks that performed the analyses and generated all figures used in the manuscript.
 
