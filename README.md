@@ -30,16 +30,18 @@ run_fmri.py -e loc -s subjects.txt -w preproc
 Next, we conducted an ICA decomposition (run_melodic.ipynb) and automatically classified and removed noise components (run_fix.ipynb). Details can be found at http://fsl.fmrib.ox.ac.uk/fsl/fslwiki/FIX/UserGuide.
 
 Next, first-level models were fit to each run, registered to the space of the first functional run, and a fixed effects analysis was conducted.
-'''
+
+```
 run_fmri.py -e sim -altmodel PE -s subjects.txt -w model reg ffx -regspace epi
-'''
+```
+
 For the localizer experiment, data were registered to the first run of the SIM experment by using the following command:
 run_fmri.py -e loc -s subjects.txt -w model reg ffx -regspace epi -regexp sim
 
-### Behavioral Analysis Notebooks
+## Behavioral Analysis Notebooks
 
 
-### fMRI Analysis Notebooks
+## fMRI Analysis Notebooks
 
 make_masks.ipynb
 Link to static notebook
@@ -81,14 +83,6 @@ Link to static notebook
 
 This notebook generates the ROI figure in the manuscript.
 
-Software Versions
-MRI Processing
-Freesurfer: 5.3
-FSL: 5.0
-R Packages
-R: 3.3.1
-Lyman
-v0.0.10
 
 Other Data
 project.py
@@ -102,3 +96,9 @@ The lyman experiment file for first-level modeling the fMRI data.
 
 subjects.txt
 The subject codes used in the processing.
+
+## License
+
+All code is freely available under the BSD (3-clause) license.
+
+
