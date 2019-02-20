@@ -7,7 +7,7 @@ Raw behavioral and MRI data for this study can be accessed at: https://openneuro
 The code is contained within several IPython notebooks that performed the analyses and generated all figures used in the manuscript.
 
 fMRI Analysis
-First, the anatomical image for each subject was processed using Freesurfer to generate the cortical surface models. The code for this can be found in recon-all.ipynb.
+First, the anatomical image for each subject was processed using Freesurfer's recon-all tool to generate the cortical surface models. 
 
 Next, for the Princeton subjects we prepare fieldmap images from two images taken with opposite phase encoding directions. Details can be found here: https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/topup. The code for this analysis can be found in prepare_fieldmaps.ipynb.
 
@@ -24,7 +24,7 @@ Once those commands have been executed, every analysis can be generated using th
 Behavioral Analysis
 All behavioral analysis for the Hunger and Justify experiments can be found in behavioral/analyze_behavioral_studies.ipynb. Raw data for both datasets are also stored here as csv files.
 
-###fMRI Analysis Notebooks
+### fMRI Analysis Notebooks
 
 make_masks.ipynb
 Link to static notebook
