@@ -24,8 +24,10 @@ Next, we prepare fieldmap images from two images taken with opposite phase encod
 
 Next, the functional data were preproccesed with FSL, Freesurfer, and Nipype using lyman. The processing used the experiment parameters in the sim.py and loc.py files included in this repository. This was performed with the following command line executions:
 
+```
 run_fmri.py -e sim -s subjects.txt -w preproc
 run_fmri.py -e loc -s subjects.txt -w preproc
+```
 
 Next, we conducted an ICA decomposition (run_melodic.ipynb) and automatically classified and removed noise components (run_fix.ipynb). Details can be found at http://fsl.fmrib.ox.ac.uk/fsl/fslwiki/FIX/UserGuide.
 
@@ -36,7 +38,10 @@ run_fmri.py -e sim -altmodel PE -s subjects.txt -w model reg ffx -regspace epi
 ```
 
 For the localizer experiment, data were registered to the first run of the SIM experment by using the following command:
+
+```
 run_fmri.py -e loc -s subjects.txt -w model reg ffx -regspace epi -regexp sim
+```
 
 ## Behavioral Analysis Notebooks
 
@@ -63,13 +68,11 @@ Link to static notebook
 
 For some subjects, bbregister failed and we needed to identify bad registrations and potentially create hand-made initializations.
 
-roi_analysis.ipynb
-Link to static notebook
+[roi_analysis.ipynb](roi_analysis.ipynb)
 
 Main analysis code for ROI analysis for the manuscript.
 
 run_fix.ipynb
-Link to static notebook
 
 Run’s FSL’s automatic ICA denoising algorithm.
 
