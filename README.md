@@ -2,7 +2,7 @@
 
 This repository contains analysis code for the following paper:
 
-Ian C. Ballard, Anthony D. Wager, Samuel M. McClure. Hippocampal Pattern Separation Supports Reinforcement Learning.
+Ian C. Ballard, Anthony D. Wager, Samuel M. McClure. Hippocampal Pattern Separation Supports Reinforcement Learning, 2019. Nature Communications.
 
 Raw behavioral and MRI data for this study can be accessed at: https://openneuro.org/datasets/ds001590
 
@@ -45,6 +45,21 @@ run_fmri.py -e loc -s subjects.txt -w model reg ffx -regspace epi -regexp sim
 
 ## Behavioral Analysis Notebooks
 
+[analyze_behavioral_data.ipynb](analyze_behavioral_data.ipynb)
+
+Runs model-free analysis of behavioral data
+
+[RT_fitting.ipynb](RT_fitting.ipynb)
+
+Fits RL models to reaction time data, analyzes with leave-one-subject-out approach, and simulates values for Figure 2
+
+[RT_model_bayesian_model_comparison.ipynb](RT_model_bayesian_model_comparison.ipynb)
+
+Compares RL models of reaction time data with Bayesian model comparison
+
+[all_rts.csv](all_rts.csv)
+
+Reaction time data
 
 ## fMRI Analysis Notebooks
 
@@ -72,6 +87,17 @@ Run’s FSL’s ICA decomposition on pre-processed data.
 
 This notebook generates the ROI mask figure in the Supplement.
 
+[compute_PSA.ipynb](compute_PSA.ipynb)
+
+Compute PSA matrices and conduct mixed-effects analysis on them
+
+[PSA_analysis.ipynb](PSA_analysis.ipynb)
+
+Conduct permutation and control tests of regressions on PSA matrices
+
+[pattern_content_analysis.ipynb](pattern_content_analysis.ipynb)
+
+Analysis for Figure 6. Uses localizer data to probe content of task representations.
 
 ## Lyman software
 The following scripts specify the analyses run by the Lyman ecosystem.
